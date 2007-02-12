@@ -6,7 +6,7 @@
 %define	pdir	Catalyst
 %define	pnam	Plugin-Session-Store-FastMmap
 Summary:	Catalyst::Plugin::Session::FastMmap - FastMmap sessions for Catalyst
-Summary(pl):	Catalyst::Plugin::Session::FastMmap - sesje FastMmap dla Catalysta
+Summary(pl.UTF-8):   Catalyst::Plugin::Session::FastMmap - sesje FastMmap dla Catalysta
 Name:		perl-Catalyst-Plugin-Session-Store-FastMmap
 Version:	0.02
 Release:	1
@@ -31,10 +31,10 @@ Catalyst::Plugin::Session::Store::FastMmap is a fast session storage
 plugin for Catalyst that uses an mmap'ed file to act as a shared
 memory interprocess cache. It is based on Cache::FastMmap.
 
-%description -l pl
+%description -l pl.UTF-8
 Catalyst::Plugin::Session::Store::FastMmap to wtyczka szybkiego
-przechowywania danych sesji dla Catalysta u¿ywaj±ca mmapowanego pliku
-jako pamiêci podrêcznej wspó³dzielonej miêdzy procesami. Jest oparta
+przechowywania danych sesji dla Catalysta uÅ¼ywajÄ…ca mmapowanego pliku
+jako pamiÄ™ci podrÄ™cznej wspÃ³Å‚dzielonej miÄ™dzy procesami. Jest oparta
 na Cache::FastMmap.
 
 %prep
