@@ -6,7 +6,7 @@
 %define	pdir	Catalyst
 %define	pnam	Plugin-Session-Store-FastMmap
 Summary:	Catalyst::Plugin::Session::FastMmap - FastMmap sessions for Catalyst
-Summary(pl.UTF-8):   Catalyst::Plugin::Session::FastMmap - sesje FastMmap dla Catalysta
+Summary(pl.UTF-8):	Catalyst::Plugin::Session::FastMmap - sesje FastMmap dla Catalysta
 Name:		perl-Catalyst-Plugin-Session-Store-FastMmap
 Version:	0.02
 Release:	1
