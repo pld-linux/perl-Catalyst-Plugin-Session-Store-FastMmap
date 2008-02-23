@@ -8,15 +8,14 @@
 Summary:	Catalyst::Plugin::Session::FastMmap - FastMmap sessions for Catalyst
 Summary(pl.UTF-8):	Catalyst::Plugin::Session::FastMmap - sesje FastMmap dla Catalysta
 Name:		perl-Catalyst-Plugin-Session-Store-FastMmap
-Version:	0.02
+Version:	0.05
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Catalyst/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	4bb42dc7c9c4300240b1d0a3e88f37cd
+# Source0-md5:	a5c28758a3a212fcc0f374110bc7855c
 URL:		http://search.cpan.org/dist/Catalyst-Plugin-Session-Store-FastMmap/
-BuildRequires:	perl-Module-Build
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
@@ -42,17 +41,17 @@ na Cache::FastMmap.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Build.PL \
-	destdir=$RPM_BUILD_ROOT \
-	installdirs=vendor
-./Build
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor
+%{__make}
 
-%{?with_tests:./Build test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-./Build install
+%{__make} pure_install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
