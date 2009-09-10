@@ -8,13 +8,13 @@
 Summary:	Catalyst::Plugin::Session::FastMmap - FastMmap sessions for Catalyst
 Summary(pl.UTF-8):	Catalyst::Plugin::Session::FastMmap - sesje FastMmap dla Catalysta
 Name:		perl-Catalyst-Plugin-Session-Store-FastMmap
-Version:	0.05
+Version:	0.11
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Catalyst/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	a5c28758a3a212fcc0f374110bc7855c
+# Source0-md5:	75c545a9b1cd92b294aa950677bb631a
 URL:		http://search.cpan.org/dist/Catalyst-Plugin-Session-Store-FastMmap/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
